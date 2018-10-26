@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view style='height:100%;'>
+  <scroll-view>
+    <swiper indicator-dots='true' autoplay='true' circular='true' style='width:100%;height:{{imgHeight}}px'>
+      <block wx:for='{{banners}}'>
+        <swiper-item>
+          <image src='{{item}}' mode='widthFix'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view style='margin-top:10px;'>
+      <view class='item' wx:for='{{list}}' wx:for-item='item' data-item='{{item}}' style='background-image: url({{item.url}})' bindtap='itemClick'>
+        <view class='title'>{{item.product_name}}
+          <text class='price'>{{item.price}}</text>元</view>
+        <view>五本精选绘本 配送上门</view>
+        <view>期限
+          <text class='price'>{{item.days}}</text> 天</view>
+        <view>{{item.product_type_text}}</view>
+      </view>
+      <view class='opinion' bindtap='opinion'>
+        <text>袋鼠麻麻 》</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='pupop-view' wx:if="{{isShowPupop}}" ></view>
+
+  <view class='pupop' wx:if="{{isShowPupop}}">
+    <view class='pupop-title'>提示</view>
+    <input class='pupop-content' placeholder='请输入手机号'></input>
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"> 确定</button>
+  </view>
+
+  <view class="bottom-nav">
+     <view class="headline"><text>袋 鼠 麻 麻</text></view>
+     <view class="homepage">
+         <view class="ico-group on">
+          <image class="homeIco" src='{{homeIco}}' mode='widthFix'></image>
+          <view class="viewText">首页</view>
+         </view>
+
+         <view class="navtext on">HOMEPAGE</view>
+     </view>
+     <view bindtap='goUser' class="personal">
+       <view class="ico-group off">
+         <image class="personIco" src='{{personIco}}' mode='widthFix'></image>
+         <view  class="viewText">用户</view>
+       </view>
+         <view class="navtext off">PERSONAL</view>
+     </view>
+  </view>
+
+</view>

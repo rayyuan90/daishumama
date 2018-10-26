@@ -1,0 +1,11 @@
+<!--pages/local/local.wxml-->
+<view class='container'>
+
+<view class='item' wx:for='{{list}}' wx:for-item="item" data-item='{{item}}' bindtap='editLocal'>
+<text>{{item.info}}</text>
+</view>
+<view class='btn' bindtap='addLocal' wx:if='{{count === 0}}'>
+添加
+</view>
+
+</view>

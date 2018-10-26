@@ -1,0 +1,77 @@
+/* pages/addBaby/addBaby.wxss */
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+input, picker ,
+textarea{
+  width: 55%;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 5%;
+  font-size: 14px;
+}
+
+picker {
+  align-content: left;
+  justify-content: flex-start;
+  display: block;
+  text-align: left;
+}
+textarea{
+  height: 50px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+picker view {
+  text-align: left;
+  width: 100%;
+  line-height: 30px;
+}
+
+.item text {
+  width: 33%;
+  height: 30px;
+  justify-content: flex-end;
+  display: flex;
+  margin-right: 2%;
+  margin-left: 5%;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.bottom {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 0px 25px;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 1px solid #42bde4;
+  border-radius: 4px;
+  margin-top: 35px;
+}

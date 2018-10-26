@@ -1,0 +1,32 @@
+
+.container{
+  height: 100%;
+}
+.item,
+.opinion{
+   /* align-items: center;  */
+  position: relative;
+  overflow: hidden;
+  flex-direction:column;
+  border-radius: 5px;
+  margin: 5px 10px;
+  display: flex;
+  color:#0b6836;
+  font-size: 12px;
+  padding: 10px 20px;
+  background-repeat: no-repeat;
+  background-size:100%;
+}
+.title{
+  font-size: 18px;
+}
+.price{
+  color: red;
+  font-size: 16px;
+}
+.title .price{
+  font-size: 20px;
+}
+.opinion{
+  align-items: center;
+}

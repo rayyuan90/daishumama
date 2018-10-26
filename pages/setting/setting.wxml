@@ -1,0 +1,4 @@
+<!--pages/setting/setting.wxml-->
+<view>
+<switch bindchange="switch2Change"/>
+</view>

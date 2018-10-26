@@ -1,0 +1,31 @@
+/* pages/baby/baby.wxss */
+.item {
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  border:1px solid #efefef;
+  border-radius: 4px;
+  flex-direction: column;
+  background-size: 100%;
+  justify-content: space-between;
+  text-align: center;
+  padding: 4px 15px;
+}
+
+.btn {
+  padding: 0px 25px;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 1px solid #42bde4;
+  border-radius: 4px;
+  margin-top: 35px;
+}

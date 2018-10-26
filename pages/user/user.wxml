@@ -1,0 +1,44 @@
+<!--pages/user/user.wxml-->
+<wxs src="../../filter/util.wxs" module="util" />
+
+<view class='user' module="util">
+  <view class='head' style='margin-top:{{headTop}}px;'>
+    <text class='address' bindtap='address'>地址管理</text>
+    <text class='baby' bindtap='baby'>宝宝管理</text>
+    <text class='date' >会员日期</text>
+  </view>
+  <view class='btn'>
+    <view class='borrow' style='margin-right:{{mRigth}}px;margin-top:{{top}}px;' bindtap='borrow'>借阅</view>
+    <view class='share' style='margin-right:{{mRigth}}px;margin-top:{{top1}}px;' bindtap='onShareAppMessage'>分享</view>
+  </view>
+  <scroll-view style='margin-top:{{top2}}px;'>
+    <view class='scroll-view'>
+
+      <view class='item' wx:for='{{data}}' wx:for-item="item" data-item='{{item}}' style='margin-left:{{mleft}}px;width:{{itemWidth}}px;height:{{itemHeight}}px;'>
+        <text>
+    {{item}}
+     </text>
+
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="bottom-nav">
+     <view class="headline"><text>袋 鼠 麻 麻</text></view>
+     <view bindtap='goHome' class="homepage">
+         <view class="ico-group off">
+          <image class="homeIco" src='{{homeIco}}' mode='widthFix'></image>
+          <view class="viewText">首页</view>
+         </view>
+
+         <view class="navtext off">HOMEPAGE</view>
+     </view>
+     <view class="personal">
+       <view class="ico-group on">
+         <image class="personIco" src='{{personIco}}' mode='widthFix'></image>
+         <view  class="viewText">用户</view>
+       </view>
+         <view class="navtext on">PERSONAL</view>
+     </view>
+  </view>
+</view>

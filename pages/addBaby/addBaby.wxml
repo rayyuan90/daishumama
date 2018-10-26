@@ -1,0 +1,27 @@
+<!--pages/addBaby/addBaby.wxml-->
+
+<scroll-view class='container'>
+  <view class='item'>
+    <text space='emsp'>姓名</text>
+    <input type='text' style='width:{{inputWidth}}px' bindinput='name' value='{{name}}'></input>
+  </view>
+  <view class='item'>
+    <text space='emsp'>性别</text>
+    <picker bindchange="sex" value="{{sex}}" range="{{sexArray}}" mode="selector" >
+      <view>{{sexArray[sex]}}</view>
+    </picker>
+  </view>
+  <view class='item'>
+    <text space='emsp'>年龄</text>
+    <picker bindchange="age" value="{{age}}" range="{{ageArray}}" mode="selector" >
+      <view>{{ageArray[age]}}</view>
+    </picker>
+  </view>
+
+
+  <view class='btn' bindtap='add' wx:if='{{!isEdit}}'>添加</view>
+  <view class='btn' bindtap='add' wx:else>修改</view>
+  <view class='toast' wx:if="{{isShowToast}}">
+    <text>{{toastText}}</text>
+  </view>
+</scroll-view>

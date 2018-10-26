@@ -1,0 +1,15 @@
+var homeTitleFormat = function(day){
+  switch(day){
+
+  }
+}
+var getBackgroundImagePath = function(index,count){
+  if (index === 0) return 'https://www.kangaroo-book.com/img/plank1.png'
+  else if (index === count -1){
+    return 'https://www.kangaroo-book.com/img/plank4.png'
+  } else return 'https://www.kangaroo-book.com/img/plank2.png'
+}
+module.exports = {
+  homeTitleFormat:homeTitleFormat,
+  getBackgroundImagePath: getBackgroundImagePath
+}

@@ -1,0 +1,46 @@
+<!--pages/info/info.wxml-->
+<scroll-view class='container'>
+  <view class='item'>
+    <text space='emsp'>姓名</text>
+    <input type='text' style='width:{{inputWidth}}px' bindinput='name' value='{{name}}'></input>
+  </view>
+  <view class='item'>
+    <text space='emsp'>性别</text>
+    <picker bindchange="sex" value="{{sex}}" range="{{sexArray}}" mode="selector">
+      <view>{{sexArray[sex]}}</view>
+    </picker>
+  </view>
+  <view class='item'>
+    <text space='emsp'>年龄</text>
+    <picker bindchange="age" value="{{age}}" range="{{ageArray}}" mode="selector">
+      <view>{{ageArray[age]}}</view>
+    </picker>
+  </view>
+  <view class='item'>
+    <text space='emsp'>省</text>
+    <picker bindchange="bindProvince" value="{{province}}" range="{{provinceArray}}" mode="selector" range-key='name'>
+      <view>{{provinceArray[province].name}}</view>
+    </picker>
+  </view>
+  <view class='item'>
+    <text space='emsp'>市</text>
+    <picker bindchange="bindCity" value="{{city}}" range="{{cityArray}}" mode="selector" range-key='name'>
+      <view>{{cityArray[city].name}}</view>
+    </picker>
+  </view>
+  <view class='item'>
+    <text space='emsp'>区</text>
+    <picker bindchange="bindRegion" value="{{region}}" range="{{regionArray}}" mode="selector" range-key='name'>
+      <view>{{regionArray[region].name}}</view>
+    </picker>
+  </view>
+  <view class='item'>
+    <text space='emsp'>详细地址</text>
+    <input type='text' style='width:{{inputWidth}}px' bindinput='addlocal' value='{{local}}'></input>
+  </view>
+  <view class='btn' bindtap='add'>确定</view>
+
+  <view class='toast' wx:if="{{isShowToast}}">
+    <text>{{toastText}}</text>
+  </view>
+</scroll-view>

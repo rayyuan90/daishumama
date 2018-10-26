@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/user/user",
+    "pages/setting/setting",
+    "pages/local/local",
+    "pages/addlocal/addlocal",
+    "pages/info/info",
+    "pages/baby/baby",
+    "pages/addBaby/addBaby"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  }
+}
