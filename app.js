@@ -2,7 +2,7 @@
 App({
   onLaunch: function () {
     var that = this;
-    // 登录
+    // 登录 log 测试
     console.log("===============================");
     wx.login({
       success: res => {
