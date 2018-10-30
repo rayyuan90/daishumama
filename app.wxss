@@ -85,9 +85,11 @@ page {
     width:100vw;
     padding:15px 0;
 }
+
 .bottom-nav .viewText{
    color:#fff;
 }
+
 .bottom-nav .navtext,.bottom-nav .viewText{
    float:left;
    height:25px;
@@ -95,12 +97,15 @@ page {
    font-size:14px;
    line-height:25px;
 }
+
 .bottom-nav .on{
    color:#45daf8;
 }
+
 .bottom-nav .off{
    color:#818181;
 }
+
 .bottom-nav .ico-group {
    width:60px;
   height:25px;
@@ -111,28 +116,34 @@ page {
   color:#fff;
   border-radius:4px;
 }
+
 .bottom-nav .ico-group.off{
   background-color:#818181;
 }
+
 .bottom-nav .headline{
  text-align:center;
  height:10px;
  padding-bottom:10px;
 }
+
 .bottom-nav .headline text{
     display: inline-block;
     position: relative;
     font-size:8px;
 
 }
+
 .bottom-nav .headline text:before {
     right: 100%;
     margin-right: 5px;
 }
+
 .bottom-nav .headline text:after {
     left: 100%;
     margin-left: 5px;
 }
+
 .bottom-nav .headline text:before,
 .bottom-nav .headline text:after {
     content: "";
@@ -143,6 +154,7 @@ page {
     top: 5px;
     width: 100vw;
 }
+
 .bottom-nav .homepage, .bottom-nav .personal{
    width:48vw;
    float:left;
@@ -155,9 +167,11 @@ page {
    height:20px;
    margin-top:10px;
 }
+
 .bottom-nav .homepage{
    border-right:1px solid #6F7378;
 }
+
 .bottom-nav .homepage .homeIco,.bottom-nav .personal .personIco{
     width:18px;
     height:18px;
