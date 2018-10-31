@@ -15,19 +15,5 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "",
     "navigationBarTextStyle": "black"
-  },
-  "tabBar": {
-    "selectedColor":"#0b6836",
-    "backgroundColor":"#fff",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "购买"
-      },
-      {
-        "pagePath": "pages/user/user",
-        "text": "个人中心"
-      }
-    ]
   }
 }
